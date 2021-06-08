@@ -27,13 +27,14 @@ export const FavoritesContextProvider = (props) => {
 	//now remove a favorite
 	const handleRemoveFavorite = (meetupId) => {
 		setUserFavorites((prevUserFavorites) => {
-			return prevUserFavorites.filter((meetup) => meetupId !== meetupId)
+			//if meet.id = meetupId, we drop it
+			return prevUserFavorites.filter((meetup) => meetup.id !== meetupId)
 		})
 	}
 
 	//now check if meetup is already a favorite
 	const handleMeetupIsFavorite = (meetupId) => {
-		return userFavorites.some((meetupId) => meetupId === meetupId)
+		return userFavorites.some((meetup) => meetup.id === meetupId)
 	}
 
 	const context = {

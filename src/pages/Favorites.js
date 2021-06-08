@@ -1,9 +1,9 @@
 import { useContext } from 'react'
 
-// import classes from './MeetupItem.module.css'
-// import Card from '../ui/Card'
 import FavoritesContext from '../store/favorites-context'
 import MeetupList from '../components/meetups/MeetupList'
+import classes from '../components/meetups/MeetupItem.module.css'
+import { Link } from 'react-router-dom'
 
 const Favorites = () => {
 	//call our context here and store it in the constant <favoriteCtx>
@@ -20,6 +20,11 @@ const Favorites = () => {
 		<section>
 			<h1>Favorites Meetups</h1>
 			{content}
+			<div className={classes.actions}>
+				<Link to='/new-meetup'>
+					<button>Add Favorite</button>
+				</Link>
+			</div>
 		</section>
 	)
 }

@@ -9,7 +9,9 @@ const MainNav = () => {
 
 	return (
 		<header className={classes.header}>
-			<div className={classes.logo}>WHK Meetups</div>
+			<div className={classes.logo}>
+				<Link to='/'>WHK Meetups</Link>
+			</div>
 			<nav>
 				<ul>
 					<li>

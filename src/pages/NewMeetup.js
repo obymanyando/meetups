@@ -18,7 +18,7 @@ const NewMeetup = () => {
 	}
 	return (
 		<div>
-			<h1>New Meetup Page</h1>
+			<h1>Submit New Meetup</h1>
 			<NewMeetupForm onAddMeetup={handleAddMeetup} />
 		</div>
 	)
