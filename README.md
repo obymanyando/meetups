@@ -15,4 +15,4 @@ An app to advertise and find events around town. You can advertise your own even
 
 To be deployed on Netlify soon.
 
-NB: Images are acting up 
+NB: Images are not fetching properly. Working on it :) 
