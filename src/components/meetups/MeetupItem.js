@@ -5,7 +5,6 @@ import Card from '../ui/Card'
 import FavoritesContext from '../../store/favorites-context'
 
 const MeetupItem = ({ id, image, title, address, description }) => {
-	console.log(image)
 	//call our context here and store it in the constant <favoriteCtx>
 	const favoriteCtx = useContext(FavoritesContext)
 
