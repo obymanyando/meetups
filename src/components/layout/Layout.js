@@ -1,5 +1,6 @@
 import MainNav from './MainNav'
 import classes from './Layout.module.css'
+import Footer from './Footer'
 
 //General layout fo the whole app
 const Layout = (props) => {
@@ -7,6 +8,7 @@ const Layout = (props) => {
 		<div>
 			<MainNav />
 			<main className={classes.main}>{props.children}</main>
+			<Footer />
 		</div>
 	)
 }

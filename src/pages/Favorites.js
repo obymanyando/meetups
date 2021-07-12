@@ -18,7 +18,7 @@ const Favorites = () => {
 	}
 	return (
 		<section>
-			<h1>Favorites Meetups</h1>
+			<h1>Your Favorite Meetups</h1>
 			{content}
 			<div className={classes.actions}>
 				<Link to='/new-meetup'>

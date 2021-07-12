@@ -9,17 +9,7 @@ import MeetupList from '../components/meetups/MeetupList'
 // 		address: 'Meetupstreet 5, 12345 Meetup City',
 // 		description:
 // 			'This is a first, amazing meetup which you definitely should not miss. It will be a lot of fun!',
-// 	},
-// 	{
-// 		id: 'm2',
-// 		title: 'This is a second meetup',
-// 		image:
-// 			'https://en.wikipedia.org/wiki/Windhoek#/media/File:Windhoek-269058_1920.jpg',
-// 		address: 'Meetupstreet 5, 12345 Meetup City',
-// 		description:
-// 			'This is a first, amazing meetup which you definitely should not miss. It will be a lot of fun!',
-// 	},
-// ]
+// 	}]
 
 const AllMeetups = () => {
 	//We cannot use async/await here because react comps. must ne syncronous. They must directly return a jsx. A promise will make the whole comp. hold until full response. Therefore, we can't defer the response. But, we can return a temp. value instead, i.e. a 'loading' message. Once we have a res, we want to update the ui. We do this using state.
@@ -60,7 +50,7 @@ const AllMeetups = () => {
 
 	return (
 		<section>
-			<h1>All Meetups Page</h1>
+			<h1>Meetups & Events Near You.</h1>
 			<MeetupList meetups={receivedMeetups} />
 		</section>
 	)
