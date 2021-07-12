@@ -11,8 +11,12 @@ An app to advertise and find events around town. You can advertise your own even
 
 ### Backend
 - Firebase
--   Realtime database, Auth
+-   Realtime database
+-   Auth (Not active yet (July 21))
 
-To be deployed on Netlify soon.
+### Hosting
+- Hosted on Netlify, complete with continuous integration.
+
+[Demo on Netlify](https://oby-meetups.netlify.app/)
 
 NB: Images are not fetching properly. Working on it :) 
